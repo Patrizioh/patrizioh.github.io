@@ -1,91 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Logistic Regression Calculator for Same Day Surgery</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#303032">
+  <meta name="description" content="Our wedding film, photographs, and favorite memories.">
+  <title>Riley &amp; Harrison — Our Wedding</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Social Determinant Calculator for Same-Day Total Joint Discharge</h1>
-            <p class="subtitle">Predictive same day surgery calculator for total joint arthroplasty utilizing demographics and social factors.</p>
-        </header>
-        <form id="surgeryForm">
-            <div class="form-group">
-                <div class="label-group">
-                    <label>Surgery Type:</label>
-                    <button type="button" class="btn option selected" data-field="surgeryType" data-value="0" onclick="selectOption('surgeryType', 0)">THA</button>
-                    <button type="button" class="btn option" data-field="surgeryType" data-value="-0.338" onclick="selectOption('surgeryType', -0.338)">TKA</button>
-                    <input type="hidden" id="surgeryType" value="0">
-                </div>
-                <div class="label-group">
-                    <label>Sex:</label>
-                    <button type="button" class="btn option selected" data-field="sex" data-value="0" onclick="selectOption('sex', 0)">Male</button>
-                    <button type="button" class="btn option" data-field="sex" data-value="-0.302" onclick="selectOption('sex', -0.302)">Female</button>
-                    <input type="hidden" id="sex" value="0">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label-group">
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" class="form-control" value="65">
-                </div>
-                <div class="label-group">
-                    <label for="asaScore">ASA Score:</label>
-                    <input type="number" id="asaScore" class="form-control" value="0">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label-group">
-                    <label>Race:</label>
-                    <button type="button" class="btn option selected" data-field="race" data-value="0" onclick="selectOption('race', 0)">White</button>
-                    <button type="button" class="btn option" data-field="race" data-value="-0.764" onclick="selectOption('race', -0.764)">Black</button>
-                    <button type="button" class="btn option" data-field="race" data-value="1.349" onclick="selectOption('race', 1.349)">Asian</button>
-                    <button type="button" class="btn option" data-field="race" data-value="-0.758" onclick="selectOption('race', -0.758)">Pacific</button>
-                    <button type="button" class="btn option" data-field="race" data-value="-0.28" onclick="selectOption('race', -0.28)">Unreported</button>
-                    <input type="hidden" id="race" value="0">
-                </div>
-                <div class="label-group">
-                    <label>Marital Status:</label>
-                    <button type="button" class="btn option selected" data-field="maritalStatus" data-value="0" onclick="selectOption('maritalStatus', 0)">Single</button>
-                    <button type="button" class="btn option" data-field="maritalStatus" data-value="0.304" onclick="selectOption('maritalStatus', 0.304)">Married</button>
-                    <button type="button" class="btn option" data-field="maritalStatus" data-value="-0.271" onclick="selectOption('maritalStatus', -0.271)">Divorced</button>
-                    <button type="button" class="btn option" data-field="maritalStatus" data-value="-0.063" onclick="selectOption('maritalStatus', -0.063)">Widowed</button>
-                    <input type="hidden" id="maritalStatus" value="0">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label-group">
-                    <label>Exercise:</label>
-                    <button type="button" class="btn option selected" data-field="exercise" data-value="0" onclick="selectOption('exercise', 0)">No</button>
-                    <button type="button" class="btn option" data-field="exercise" data-value="1.821" onclick="selectOption('exercise', 1.821)">Yes</button>
-                    <input type="hidden" id="exercise" value="0">
-                </div>
-                <div class="label-group">
-                    <label>Admitted to ER within Last 12 Months:</label>
-                    <button type="button" class="btn option selected" data-field="hospitalAdmission" data-value="0" onclick="selectOption('hospitalAdmission', 0)">No</button>
-                    <button type="button" class="btn option" data-field="hospitalAdmission" data-value="-0.509" onclick="selectOption('hospitalAdmission', -0.509)">Yes</button>
-                    <input type="hidden" id="hospitalAdmission" value="0">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="label-group">
-                    <label>Transportation Access:</label>
-                    <button type="button" class="btn option selected" data-field="transportation" data-value="0" onclick="selectOption('transportation', 0)">No</button>
-                    <button type="button" class="btn option" data-field="transportation" data-value="0.964" onclick="selectOption('transportation', 0.964)">Yes</button>
-                    <input type="hidden" id="transportation" value="0">
-                </div>
-            </div>
-                  <div id="result" class="result"></div>
-        </form>
-	<footer>
-            <p>
-</p>
-
-        </footer>
-    </div>
-    <script src="script.js"></script>
+  <a class="skip-link" href="#photos">Skip to the wedding album</a>
+  <header class="site-header">
+    <a class="monogram" href="#home" aria-label="Home" data-monogram>Riley &amp; Harrison</a>
+    <nav aria-label="Main navigation"><a href="#photos">The album</a><a href="#film">The film</a><a class="nav-upload" href="#share">Share your photos <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section id="home" class="hero" aria-labelledby="wedding-title">
+      <img class="hero-image" id="hero-image" alt="" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-frame">
+        <p class="hero-intro" id="intro">Together with our families</p>
+        <h1 id="wedding-title">Our Wedding</h1>
+        <p class="hero-date" id="wedding-date">June 6, 2026</p>
+      </div>
+      <a class="hero-scroll" href="#photos"><span>OUR DAY, REMEMBERED</span><span aria-hidden="true">↓</span></a>
+    </section>
+    <section class="gallery-section" id="photos" aria-labelledby="photos-heading">
+      <div class="section-wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow">THE WEDDING ALBUM</p><h2 id="photos-heading">A day we’ll always <span class="keep-together">come back to.</span></h2></div></div>
+        <div class="album-opening">
+          <figure class="film-card reveal" id="film" aria-label="Our wedding film"><div id="film-player"></div><figcaption><span>THE WEDDING FILM</span><span>A little under three minutes. A lifetime of memories.</span></figcaption><a id="download-film" class="original-link" hidden>Download original film <span aria-hidden="true">↓</span></a><p class="video-note" id="video-note" role="status"></p></figure>
+          <aside class="wedding-note reveal" aria-label="A note about our love"><span class="note-flourish" aria-hidden="true">&amp;</span><blockquote>“A wet knot<br>is harder<br>to untie.”</blockquote><p>Here’s to a love that<br>only holds tighter.</p></aside>
+        </div>
+        <div class="album-divider reveal"><span>THE DAY IN PHOTOGRAPHS</span><span>From the first moments to the last dance</span></div>
+        <div class="gallery" id="gallery"></div>
+        <div class="gallery-more"><button id="show-more-photos" type="button">Show more photos</button><p id="gallery-progress" aria-live="polite"></p></div>
+      </div>
+    </section>
+    <section class="share-section" id="share" aria-labelledby="share-heading">
+      <div class="section-wrap share-inner reveal"><div class="share-copy"><p class="eyebrow">THE DAY, THROUGH YOUR EYES</p><h2 id="share-heading">Your moments<br>belong here, too.</h2><p>The candid smiles. The dance-floor moments. The ones we missed.<br>Share your photos and videos with us.</p></div><div class="share-action"><span class="upload-icon" aria-hidden="true">↑</span><a class="upload-button" id="guest-upload" target="_blank" rel="noopener noreferrer" hidden>Upload your photos &amp; videos <span aria-hidden="true">↗</span></a><div id="upload-coming-soon" class="upload-pending"><strong>Guest uploads opening soon</strong><span>Our Dropbox upload link will be right here.<br>Keep your favorites ready.</span></div><p class="upload-service" id="upload-service" hidden>Opens our Dropbox upload page in a new tab.</p></div></div>
+    </section>
+  </main>
+  <footer><a class="monogram" href="#home" data-monogram>Riley &amp; Harrison</a><p>With love, always.</p><span id="footer-date">06.06.2026</span></footer>
+  <dialog id="photo-dialog" class="media-dialog photo-dialog" aria-label="Photo viewer"><button class="close-button" data-close="photo-dialog" aria-label="Close photo viewer">×</button><button class="photo-arrow previous" id="previous-photo" aria-label="Previous photo">‹</button><figure><img id="large-photo" alt=""><figcaption id="photo-caption"></figcaption></figure><button class="photo-arrow next" id="next-photo" aria-label="Next photo">›</button><div class="photo-original-actions"><a id="view-original" target="_blank" rel="noopener noreferrer">Open full-size photo ↗</a><a id="download-photo">Download original ↓</a></div><span id="photo-count" class="photo-count" aria-live="polite"></span></dialog>
 </body>
 </html>
