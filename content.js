@@ -237,17 +237,6 @@ window.weddingContent = {
       "chapter": "The ceremony"
     },
     {
-      "src": "assets/photo-023.jpg",
-      "thumbnail": "assets/photo-023-thumb.jpg",
-      "alt": "Wedding photograph 23",
-      "caption": "The ceremony · 021",
-      "shape": "wide",
-      "width": 6000,
-      "height": 4000,
-      "original": "EG5A4940 copy.jpg",
-      "chapter": "The ceremony"
-    },
-    {
       "src": "assets/photo-024.jpg",
       "thumbnail": "assets/photo-024-thumb.jpg",
       "alt": "Wedding photograph 24",
@@ -303,17 +292,6 @@ window.weddingContent = {
       "chapter": "The ceremony"
     },
     {
-      "src": "assets/photo-029.jpg",
-      "thumbnail": "assets/photo-029-thumb.jpg",
-      "alt": "Wedding photograph 29",
-      "caption": "The ceremony · 027",
-      "shape": "wide",
-      "width": 5840,
-      "height": 3893,
-      "original": "EG5A4956 copy.jpg",
-      "chapter": "The ceremony"
-    },
-    {
       "src": "assets/photo-030.jpg",
       "thumbnail": "assets/photo-030-thumb.jpg",
       "alt": "Wedding photograph 30",
@@ -322,28 +300,6 @@ window.weddingContent = {
       "width": 4000,
       "height": 6000,
       "original": "EG5A4957 copy.jpg",
-      "chapter": "The ceremony"
-    },
-    {
-      "src": "assets/photo-031.jpg",
-      "thumbnail": "assets/photo-031-thumb.jpg",
-      "alt": "Wedding photograph 31",
-      "caption": "The ceremony · 029",
-      "shape": "wide",
-      "width": 5708,
-      "height": 3805,
-      "original": "EG5A4974 copy.jpg",
-      "chapter": "The ceremony"
-    },
-    {
-      "src": "assets/photo-032.jpg",
-      "thumbnail": "assets/photo-032-thumb.jpg",
-      "alt": "Wedding photograph 32",
-      "caption": "The ceremony · 030",
-      "shape": "tall",
-      "width": 2575,
-      "height": 3862,
-      "original": "EG5A4976 copy.jpg",
       "chapter": "The ceremony"
     },
     {
@@ -509,17 +465,6 @@ window.weddingContent = {
       "width": 2829,
       "height": 4243,
       "original": "IMG_5224.JPG",
-      "chapter": "The ceremony"
-    },
-    {
-      "src": "assets/photo-103.jpg",
-      "thumbnail": "assets/photo-103-thumb.jpg",
-      "alt": "Wedding photograph 103",
-      "caption": "The ceremony · 046",
-      "shape": "wide",
-      "width": 3647,
-      "height": 2431,
-      "original": "IMG_5225.JPG",
       "chapter": "The ceremony"
     },
     {
@@ -974,17 +919,6 @@ window.weddingContent = {
       "chapter": "The celebration"
     },
     {
-      "src": "assets/photo-085.jpg",
-      "thumbnail": "assets/photo-085-thumb.jpg",
-      "alt": "Wedding photograph 85",
-      "caption": "The celebration · 087",
-      "shape": "tall",
-      "width": 4000,
-      "height": 6000,
-      "original": "EG5A5737 copy.jpg",
-      "chapter": "The celebration"
-    },
-    {
       "src": "assets/photo-086.jpg",
       "thumbnail": "assets/photo-086-thumb.jpg",
       "alt": "Wedding photograph 86",
@@ -1006,7 +940,6 @@ window.weddingContent = {
       "original": "EG5A5796 copy.jpg",
       "chapter": "The celebration"
     },
-
     {
       "src": "assets/photo-003.jpg",
       "thumbnail": "assets/photo-003-thumb.jpg",
@@ -1018,7 +951,6 @@ window.weddingContent = {
       "original": "DSCF5593.jpg",
       "chapter": "The celebration"
     },
-
     {
       "src": "assets/photo-089.jpg",
       "thumbnail": "assets/photo-089-thumb.jpg",
@@ -1028,17 +960,6 @@ window.weddingContent = {
       "width": 4000,
       "height": 2667,
       "original": "EG5A5872.jpg",
-      "chapter": "The celebration"
-    },
-    {
-      "src": "assets/photo-090.jpg",
-      "thumbnail": "assets/photo-090-thumb.jpg",
-      "alt": "Wedding photograph 90",
-      "caption": "The celebration · 094",
-      "shape": "tall",
-      "width": 2617,
-      "height": 3925,
-      "original": "EG5A5873 copy.jpg",
       "chapter": "The celebration"
     },
     {
@@ -1185,17 +1106,6 @@ window.weddingContent = {
       "chapter": "Family & friends"
     },
     {
-      "src": "assets/photo-107.jpg",
-      "thumbnail": "assets/photo-107-thumb.jpg",
-      "alt": "Wedding photograph 107",
-      "caption": "Family & friends · 108",
-      "shape": "tall",
-      "width": 3468,
-      "height": 3461,
-      "original": "IMG_5230.JPG",
-      "chapter": "Family & friends"
-    },
-    {
       "src": "assets/photo-108.jpg",
       "thumbnail": "assets/photo-108-thumb.jpg",
       "alt": "Wedding photograph 108",
@@ -1262,17 +1172,6 @@ window.weddingContent = {
       "chapter": "Family & friends"
     },
     {
-      "src": "assets/photo-114.jpg",
-      "thumbnail": "assets/photo-114-thumb.jpg",
-      "alt": "Wedding photograph 114",
-      "caption": "Family & friends · 115",
-      "shape": "wide",
-      "width": 5095,
-      "height": 2356,
-      "original": "IMG_5239.JPG",
-      "chapter": "Family & friends"
-    },
-    {
       "src": "assets/photo-116.jpg",
       "thumbnail": "assets/photo-116-thumb.jpg",
       "alt": "Wedding photograph 116",
@@ -1281,6 +1180,17 @@ window.weddingContent = {
       "width": 2829,
       "height": 4243,
       "original": "IMG_5251.JPG",
+      "chapter": "Family & friends"
+    },
+    {
+      "src": "assets/photo-114.jpg",
+      "thumbnail": "assets/photo-114-thumb.jpg",
+      "alt": "Wedding photograph 114",
+      "caption": "Family & friends · 115",
+      "shape": "wide",
+      "width": 5095,
+      "height": 2356,
+      "original": "IMG_5239.JPG",
       "chapter": "Family & friends"
     }
   ],
