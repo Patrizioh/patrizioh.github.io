@@ -886,6 +886,17 @@ window.weddingContent = {
       "chapter": "The celebration"
     },
     {
+      "src": "assets/photo-115.jpg",
+      "thumbnail": "assets/photo-115-thumb.jpg",
+      "alt": "Wedding photograph 115",
+      "caption": "The celebration · 090",
+      "shape": "tall",
+      "width": 2932,
+      "height": 2826,
+      "original": "IMG_5244.jpg",
+      "chapter": "The celebration"
+    },
+    {
       "src": "assets/photo-078.jpg",
       "thumbnail": "assets/photo-078-thumb.jpg",
       "alt": "Wedding photograph 78",
@@ -995,17 +1006,7 @@ window.weddingContent = {
       "original": "EG5A5796 copy.jpg",
       "chapter": "The celebration"
     },
-    {
-      "src": "assets/photo-115.jpg",
-      "thumbnail": "assets/photo-115-thumb.jpg",
-      "alt": "Wedding photograph 115",
-      "caption": "The celebration · 090",
-      "shape": "tall",
-      "width": 2932,
-      "height": 2826,
-      "original": "IMG_5244.jpg",
-      "chapter": "The celebration"
-    },
+
     {
       "src": "assets/photo-003.jpg",
       "thumbnail": "assets/photo-003-thumb.jpg",
@@ -1017,17 +1018,7 @@ window.weddingContent = {
       "original": "DSCF5593.jpg",
       "chapter": "The celebration"
     },
-    {
-      "src": "assets/photo-088.jpg",
-      "thumbnail": "assets/photo-088-thumb.jpg",
-      "alt": "Wedding photograph 88",
-      "caption": "The celebration · 092",
-      "shape": "wide",
-      "width": 4000,
-      "height": 2667,
-      "original": "EG5A5872.JPEG",
-      "chapter": "The celebration"
-    },
+
     {
       "src": "assets/photo-089.jpg",
       "thumbnail": "assets/photo-089-thumb.jpg",

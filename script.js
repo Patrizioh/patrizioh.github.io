@@ -110,12 +110,14 @@
 
   function makePlayer(video) {
     const url = new URL(video.url, document.baseURI);
-    if (!['http:', 'https:'].includes(url.protocol)) throw new Error('Use an HTTP(S) video URL or relative file path.');
+    const isLocalPreview = video.type === 'mp4' && url.protocol === 'file:' && new URL(document.baseURI).protocol === 'file:';
+    if (!['http:', 'https:'].includes(url.protocol) && !isLocalPreview) throw new Error('The wedding film is temporarily unavailable.');
     if (video.type === 'mp4') {
       const player = document.createElement('video');
       player.controls = true; player.autoplay = false; player.playsInline = true; player.preload = 'metadata'; player.poster = content.filmCover; player.src = url.href;
       player.setAttribute('aria-label', 'Our wedding film');
-      player.addEventListener('error', () => setText('video-note', 'This video could not load. Please check the video URL in content.js.'));
+      player.setAttribute('controlsList', 'nodownload');
+      player.addEventListener('error', () => setText('video-note', 'The wedding film could not load. Please try again.'));
       return player;
     }
     let embed;
@@ -140,12 +142,7 @@
     return player;
   }
   try { $('film-player').append(makePlayer(content.video)); }
-  catch (error) { setText('video-note', error.message); }
-  if (content.video.originalUrl) {
-    $('download-film').href = content.video.originalUrl;
-    $('download-film').download = content.video.originalFilename || 'wedding-film-original.M4V';
-    $('download-film').hidden = false;
-  }
+  catch { setText('video-note', 'The wedding film is temporarily unavailable.'); }
   document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => $(button.dataset.close).close()));
   document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', event => {
     if (event.target !== dialog) return;

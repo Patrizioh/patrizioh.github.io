@@ -118,3 +118,36 @@ footer>span { font-size:9px; letter-spacing:2px; color:var(--muted); }
   footer { display: grid; grid-template-columns: 1fr auto; gap: 16px; }
   footer .monogram { grid-column: 1 / -1; text-align: center; font-size: 24px; }
 }
+
+/* Invite guests to contribute before and after browsing the album. */
+.nav-upload { background:#f4dfac; color:#30372b; border-color:#f4dfac; font-weight:600; border-radius:3px; box-shadow:0 3px 18px #0002; }
+.nav-upload:hover { background:#fff0cd; }
+.album-upload-prompt { display:flex; justify-content:space-between; align-items:center; gap:22px; margin-top:30px; padding:20px 24px; background:#e6e8dd; border:1px solid #c6cbb5; border-left:4px solid var(--olive); border-radius:4px; font-size:12px; line-height:1.6; }
+.album-upload-prompt strong { font-weight:600; margin-right:5px; }
+.album-upload-link { display:inline-flex; align-items:center; gap:15px; flex-shrink:0; color:#353e28; font-weight:600; border-bottom:1px solid #697451; }
+.album-upload-prompt:hover { background:#dce1d0; }
+.share-section { background:#343e2e; color:#fffdf6; border-top:0; position:relative; }
+.share-badge { display:inline-block; padding:9px 12px; border:1px solid #f4dfac66; border-radius:30px; color:#f4dfac; letter-spacing:1.8px; }
+.share-copy>p:last-child { color:#e2e5d9; font-size:14px; }
+.share-action { border-left-color:#ffffff30; }
+.upload-icon { display:grid; place-items:center; width:62px; height:62px; border:1px solid #f4dfac80; border-radius:50%; color:#f4dfac; font-size:32px; margin-bottom:16px; }
+.upload-invite { color:#fffdf6; font-family:var(--serif); font-size:24px; margin-bottom:20px; }
+.upload-button { background:#f4dfac; color:#30372b; font-size:14px; font-weight:600; border-radius:4px; padding:22px 28px; box-shadow:0 6px 25px #10180e40; }
+.upload-button:hover { background:#fff0cd; transform:translateY(-2px); }
+.upload-service { color:#e2e5d9; line-height:1.7; max-width:290px; }
+.upload-pending { color:var(--ink); background:#f9f7f0; }
+@media(prefers-reduced-motion:no-preference) {
+  .nav-upload { animation:upload-glow 2.8s ease-in-out 3; }
+  .upload-icon { animation:upload-nudge 3s ease-in-out infinite; }
+  .upload-button { transition:background .2s,transform .2s; }
+}
+@keyframes upload-glow { 0%,100% { box-shadow:0 0 0 0 #f4dfac00; } 50% { box-shadow:0 0 0 7px #f4dfac30; } }
+@keyframes upload-nudge { 0%,75%,100% { transform:translateY(0); } 85% { transform:translateY(-5px); } 93% { transform:translateY(0); } }
+@media(max-width:800px) { .upload-button { gap:15px; font-size:12px; padding:20px; } }
+@media(max-width:520px) {
+  .album-upload-prompt { flex-direction:column; align-items:flex-start; gap:12px; padding:18px; font-size:12px; }
+  .album-upload-prompt strong { display:block; }
+  .share-action { border-top-color:#ffffff30; }
+  .upload-button { width:100%; justify-content:center; font-size:13px; padding:21px 15px; }
+  .share-copy>p:last-child { font-size:13px; }
+}
